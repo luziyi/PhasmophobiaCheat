@@ -22,29 +22,29 @@ class GhostAI : public II::MonoBehaviour {
 public:
     char space1[0x8];
     enum class GhostState : std::int64_t {
-        Idle,
-        Wander,
-        Hunting,
-        FavouriteRoom,
-        Light,
-        Door,
-        Throwing,
-        Fusebox,
-        Appear,
-        DoorKnock,
-        WindowKnock,
-        CarAlarm,
-        Flicker,
-        Cctv,
-        RandomEvent,
-        GhostAbility,
-        Mannequin,
-        TeleportObject,
-        Interact,
-        SummoningCircle,
-        MusicBox,
-        Dots,
-        Salt
+        空闲,
+        闲逛,
+        猎杀,
+        回到鬼房,
+        灯,
+        门,
+        扔东西,
+        保险丝,
+        现身,
+        敲门,
+        敲窗,
+        汽车警报,
+        闪烁,
+        闭路电视,
+        随机事件,
+        鬼能力,
+        模特,
+        传送物品,
+        互动,
+        召唤圆圈,
+        音乐盒,
+        点阵,
+        踩盐
     }ghostState;
     char space2[0x8];
     enum class GhostType : std::int32_t {
@@ -76,13 +76,13 @@ public:
 
     enum class Proof : std::int32_t {
         None,
-        Emf,
-        SpiritBox,
+        EMF-5级,
+        通灵盒,
         UltraViolet,
-        GhostOrb,
-        GhostWritingBook,
-        Temperature,
-        DotsProjector
+        灵球,
+        通灵笔记,
+        刺骨寒温,
+        点阵投影仪
     };
 
     struct A : MonoBehaviour {
