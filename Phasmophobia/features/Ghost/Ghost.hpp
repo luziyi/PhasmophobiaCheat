@@ -71,7 +71,7 @@ public:
         Mimic,
         Moroi,
         Deogen,
-        Thaye
+        刹耶
     };
 
     enum class Proof : std::int32_t {
